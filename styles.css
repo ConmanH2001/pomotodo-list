@@ -5,5 +5,12 @@ html, body{
 }
 
 header{
-    background-color: #00bdff;
+  background-color: #ffa600;
+  width: 80%;
+  margin: auto;
+  padding: 0 20px 10px;
+  color: #505050;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
