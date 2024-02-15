@@ -1,15 +1,17 @@
 html, body{
     margin: 0;
     padding: 0;
-    background-color: #00dcff;
+    background-color: #3c32a8;
 }
 
+/*the name and description*/
+
 header{
-  background-color: #ffa600;
+  background-color: #00dcff;
   width: 80%;
   margin: 5% auto;
   padding: 0 10px 10px;
-  color: #505050;
+  color: #303030;
   border-radius: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -24,3 +26,31 @@ header{
   font-size: 10px;
   margin: 0 auto;
 }
+
+/*pomodoro content*/
+
+#timer-box{
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 10px 5px;;
+  background-color: #00afff;
+  display: block;
+}
+
+#timer{
+  width: 40%;
+  background-color: black;
+  color: lime;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+}
+#break-counters{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#
