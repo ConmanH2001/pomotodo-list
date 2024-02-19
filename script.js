@@ -3,6 +3,20 @@ const timeDisplay = document.getElementById("time");
 const startButton = document.getElementById("start");
 const stopButton = document.getElementById("stop");
 const resetButton = document.getElementById("reset");
+const audio = new Audio();
+const alarms = [
+  {
+  name: "Work alarm!",
+  textColor: 'lime',
+  sound: 'sounds/work.mp3',
+},{
+  name: "Break alarm!",
+  textColor: 'red',
+  sound: 'sounds/break.mp3',
+},
+];
+
+
 
 // Declare global variables
 let timer; // To store interval ID
@@ -14,7 +28,7 @@ let working = true; // Flag to indicate if currently working
 let times = [
   {
     name: "working",
-    minutes: 24, // 25 minutes for work session
+    minutes: 25, // 25 minutes for work session
     display: "25:00"
   },
   {
@@ -40,7 +54,10 @@ function timerFunction() {
     // Toggle working flag
     working = !working;
     // Reset minutes based on the session type
-    minutes = times[working ? 0 : 1].minutes;
+    minutes = times[working ? 0 : 1].minutes
+    timeDisplay.style.color = alarms[working ? 0 : 1].textColor;
+    audio.src= alarms[working ? 0 : 1].sound;
+    audio.play();
   }
 
   // Format minutes and seconds for display

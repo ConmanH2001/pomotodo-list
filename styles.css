@@ -1,14 +1,15 @@
 html, body{
     margin: 0;
     padding: 0;
-    background-color: #3c32a8;
+    background-color: #6CA4DC;
+  font-family: Gill Sans, sans-serif
 }
 
 /*the name and description*/
 
 header{
-  background-color: #00dcff;
-  width: 80%;
+  background-color: #80B9F4;
+  width: 400px;
   margin: 5% auto;
   padding: 0 10px 10px;
   color: #303030;
@@ -17,9 +18,10 @@ header{
 }
 
 .name{
-  width: 100%;
+  width: 70%;
   font-size: 25px;
   margin: 0 auto;
+  text-align: center;
 }
 .desc{
   width: 80%;
@@ -30,27 +32,40 @@ header{
 /*pomodoro content*/
 
 #timer-box{
-  width: 90%;
-  margin: 0 auto;
+  margin: 80px auto;
   padding: 0 10px 5px;;
-  background-color: #00afff;
+  background-color: #80B9F4;
   display: block;
+  border-radius: 10px;
+  width: 500px;
+  height: 400px;
 }
 
 #time{
+  padding-top: 10%;
   width: 40%;
+  height: 30%;
   background-color: black;
   color: lime;
   text-align: center;
   margin: 0 auto;
   border-radius: 0 0 10px 10px;
-}
-#break-counters{
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
 }
 
-#
+
+#timer-buttons{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color:#BADDFF;
+  color: #303030;
+  border: none;
+  font-size: 30px;
+}
