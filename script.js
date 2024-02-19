@@ -28,7 +28,7 @@ let working = true; // Flag to indicate if currently working
 let times = [
   {
     name: "working",
-    minutes: 25, // 25 minutes for work session
+    minutes: 24, // 25 minutes for work session
     display: "25:00"
   },
   {
